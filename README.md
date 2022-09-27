@@ -86,11 +86,20 @@ Using NOR gate:
 
 
 ## Timing Diagram:
-Using NAND gate:
+## Using NAND gate:
+
 ![WF1](https://user-images.githubusercontent.com/94165415/192530977-7be91e3b-3af4-4a2b-88fd-5024449bc25c.png)
 
-Using NOR gate:
+## Using NOR gate:
+
 ![WF2](https://user-images.githubusercontent.com/94165415/192531021-dd8f11e6-2f02-444c-9177-89fb32e2de4b.png)
+
+## Truth Table:
+## Using NAND gate:
+![tt2](https://user-images.githubusercontent.com/94165415/192534307-deb3e212-d01e-4954-a051-df760ad7e2b1.jpeg)
+
+## Using NOR gate:
+![tt1](https://user-images.githubusercontent.com/94165415/192534356-9130da10-28ae-4e02-952b-baa2568cc572.jpeg)
 
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
