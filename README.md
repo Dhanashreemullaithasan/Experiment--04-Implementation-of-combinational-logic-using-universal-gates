@@ -31,13 +31,66 @@ F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 ## Program:
 /*
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Dhanashree.M
+RegisterNumber:  212221230018
+Using NAND gates:
+~~~
+module exno4(a,b,c,d,f);
+
+input a,b,c,d;
+
+output f;
+
+wire p,q,r;
+
+assign p=(~c & b & a);
+
+assign q=(~d & c & c & a);
+
+assign r=(c & ~b & a);
+
+assign f=(~(~p & ~q & ~r));
+
+endmodule
+~~~
+Using NOR gates:
+```
+module combimation(a,b,c,d,f);
+
+input a,b,c,d;
+
+output f;
+
+wire p,q,r;
+
+assign p=(c & ~b & a);
+
+assign q=(d & ~c & a);
+
+assign r=(c & ~b & a);
+
+assign f=((p | q & |r));
+
+endmodule
+```
 */
-## RTL realization
+## RTL realization:
 
 ## Output:
-## RTL
-## Timing Diagram
+Using NAND gate:
+![ex4](https://user-images.githubusercontent.com/94165415/192530689-ea3a11d6-2630-4b02-8cfd-ff31f380f216.png)
+
+Using NOR gate:
+![ex4()](https://user-images.githubusercontent.com/94165415/192531104-55e2f8d6-d406-4a9e-9888-80b6c5fca8cb.png)
+
+
+
+## Timing Diagram:
+Using NAND gate:
+![WF1](https://user-images.githubusercontent.com/94165415/192530977-7be91e3b-3af4-4a2b-88fd-5024449bc25c.png)
+
+Using NOR gate:
+![WF2](https://user-images.githubusercontent.com/94165415/192531021-dd8f11e6-2f02-444c-9177-89fb32e2de4b.png)
+
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
